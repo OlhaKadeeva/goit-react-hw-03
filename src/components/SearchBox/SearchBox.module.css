@@ -1,0 +1,13 @@
+.wraper {
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1px;
+}
+input {
+  flex-grow: 1;
+}

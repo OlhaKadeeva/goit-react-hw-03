@@ -1,4 +1,5 @@
 import Contact from "../Contact/Contact";
+import initialContacts from "../tasks.json";
 const ContactList = ({ contacts, onDelete }) => (
   <ul>
     {contacts.map(({ id, name, number }) => (
