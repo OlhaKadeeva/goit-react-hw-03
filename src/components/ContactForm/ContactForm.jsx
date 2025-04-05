@@ -5,8 +5,8 @@ import css from "./ContactForm.module.css";
 const ContactForm = ({ onAddContact }) => {
   const validationSchema = Yup.object({
     name: Yup.string()
-      .min(3, "Name must be at least 3 characters")
-      .max(50, "Name must be at most 50 characters")
+      .min(3, "Too Short!")
+      .max(50, "Too Long!")
       .matches(
         /^[A-Z][a-zA-Z\s]*$/,
         "The name must start with a capital letter!"
@@ -29,12 +29,16 @@ const ContactForm = ({ onAddContact }) => {
         }}
       >
         <Form>
-          <span>Name</span>
-          <Field className={css.input} name="name" />
-          <ErrorMessage name="name" component="div" className="css.error" />
-          <span>Number</span>
-          <Field className={css.input} name="number" />
-          <ErrorMessage name="number" component="div" className="css.error" />
+          <div className={css.formwrap}>
+            <span>Name</span>
+            <Field className={css.input} name="name" />
+            <ErrorMessage name="name" component="div" className={css.error} />
+          </div>
+          <div className={css.formwrap}>
+            <span>Number</span>
+            <Field className={css.input} name="number" />
+            <ErrorMessage name="number" component="div" className={css.error} />
+          </div>
           <button className={css.contact} type="submit">
             Add Contact
           </button>

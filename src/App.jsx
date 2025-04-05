@@ -26,7 +26,6 @@ const App = () => {
   }, [contacts]);
 
   const addContact = ({ name, number }) => {
-    // setContacts((prev) => [...prev, { id: nanoid(), name, number }]);
     const newContact = { id: nanoid(), name, number };
     setContacts((prevContacts) => [...prevContacts, newContact]);
   };
