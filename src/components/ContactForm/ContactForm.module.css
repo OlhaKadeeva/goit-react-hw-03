@@ -14,3 +14,7 @@
   width: 120px;
   padding: 5px;
 }
+.error {
+  color: red;
+  font-size: 0.8rem;
+}

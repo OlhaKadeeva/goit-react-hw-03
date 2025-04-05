@@ -1,4 +1,5 @@
 import css from "./Contact.module.css";
+
 const Contact = ({ name, number, onDelete }) => (
   <li className={css.list}>
     <div className={css.contacts}>
