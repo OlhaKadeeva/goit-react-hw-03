@@ -18,11 +18,15 @@ const ContactForm = ({ onAddContact }) => {
         }}
       >
         <Form>
-          <Field name="name" placeholder="Name" />
+          <span>Name</span>
+          <Field className={css.input} name="name" />
           <ErrorMessage name="name" component="div" />
-          <Field name="number" placeholder="Number" />
+          <span>Number</span>
+          <Field className={css.input} name="number" />
           <ErrorMessage name="number" component="div" />
-          <button type="submit">Add Contact</button>
+          <button className={css.contact} type="submit">
+            Add Contact
+          </button>
         </Form>
       </Formik>
     </div>

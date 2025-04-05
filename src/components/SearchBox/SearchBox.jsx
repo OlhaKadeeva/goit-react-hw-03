@@ -4,8 +4,8 @@ const SearchBox = ({ value, onChange }) => {
     <div className={css.wraper}>
       <p className={css.text}>Find contact by name</p>
       <input
+        className={css.input}
         type="text"
-        placeholder="Search"
         value={value}
         onChange={onChange}
       />

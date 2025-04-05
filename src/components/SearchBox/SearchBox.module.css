@@ -1,6 +1,7 @@
 .wraper {
   display: flex;
   flex-direction: column;
+  width: 400px;
 }
 .text {
   display: flex;
@@ -10,4 +11,5 @@
 }
 input {
   flex-grow: 1;
+  padding: 5px;
 }

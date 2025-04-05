@@ -5,7 +5,9 @@
   color: rgba(43, 42, 42, 0.87);
   background-color: #f6f4f4;
 }
-
+ul {
+  padding-inline-start: 0;
+}
 body {
   display: flex;
   min-width: 320px;
